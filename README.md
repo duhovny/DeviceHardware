@@ -8,7 +8,7 @@ Determines iOS device version.
 // Usage example, choose whatever you like.
 
 DeviceHardwareSpecificPlatform deviceHardwareSpecificPlatform = [DeviceHardware specificPlatform];
-	DeviceHardwareGeneralPlatform deviceHardwareGeneralPlatform = [DeviceHardware generalPlatform];
-	DeviceHardwarePlatformType deviceHardwarePlatformType = [DeviceHardware platformType];
-	NSString *platformString = [DeviceHardware platformString];
+DeviceHardwareGeneralPlatform deviceHardwareGeneralPlatform = [DeviceHardware generalPlatform];
+DeviceHardwarePlatformType deviceHardwarePlatformType = [DeviceHardware platformType];
+NSString *platformString = [DeviceHardware platformString];
 ```
