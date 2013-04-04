@@ -91,10 +91,10 @@
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_4])      return DeviceHardwareGeneralPlatform_iPad_4;
 	if ([platform isEqualToString:DH_MACHINE_I386])          return DeviceHardwareGeneralPlatform_Simulator;
 	if ([platform isEqualToString:DH_MACHINE_X86_64])        return DeviceHardwareGeneralPlatform_Simulator;
-	return DeviceHardwareSpecificPlatform_Unknown;
+	return DeviceHardwareGeneralPlatform_Unknown;
 }
 
-+ (DeviceHardwareGeneralPlatform)platformType {
++ (DeviceHardwarePlatformType)platformType {
 	NSString *platform = [self machine];
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_1_1])    return DeviceHardwarePlatformType_iPhone;
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_1_2])    return DeviceHardwarePlatformType_iPhone;

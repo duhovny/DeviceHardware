@@ -76,7 +76,7 @@ typedef enum {
 
 + (DeviceHardwareSpecificPlatform)specificPlatform;
 + (DeviceHardwareGeneralPlatform)generalPlatform;
-+ (DeviceHardwareGeneralPlatform)platformType;
++ (DeviceHardwarePlatformType)platformType;
 + (NSString *)platformString;
 
 + (NSString *)machine;
