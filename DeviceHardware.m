@@ -42,8 +42,8 @@
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_3_1])    return DeviceHardwareSpecificPlatform_iPhone_4;
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_3_3])    return DeviceHardwareSpecificPlatform_iPhone_4_Verizon;
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_4_1])    return DeviceHardwareSpecificPlatform_iPhone_4S;
-	if ([platform isEqualToString:DH_MACHINE_IPHONE_5_1])    return DeviceHardwareSpecificPlatform_iPhone_5;
-	if ([platform isEqualToString:DH_MACHINE_IPHONE_5_2])    return DeviceHardwareSpecificPlatform_iPhone_5;
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_5_1])    return DeviceHardwareSpecificPlatform_iPhone_5_GSM;
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_5_2])    return DeviceHardwareSpecificPlatform_iPhone_5_CDMA_GSM;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_1_1])      return DeviceHardwareSpecificPlatform_iPod_Touch_1G;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_2_1])      return DeviceHardwareSpecificPlatform_iPod_Touch_2G;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_3_1])      return DeviceHardwareSpecificPlatform_iPod_Touch_3G;
@@ -132,8 +132,8 @@
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_3_1])    return @"iPhone 4";
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_3_3])    return @"Verizon iPhone 4";
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_4_1])    return @"iPhone 4S";
-	if ([platform isEqualToString:DH_MACHINE_IPHONE_5_1])    return @"iPhone 5";
-	if ([platform isEqualToString:DH_MACHINE_IPHONE_5_2])    return @"iPhone 5";
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_5_1])    return @"iPhone 5 GSM";
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_5_2])    return @"iPhone 5 CDMA+GSM";
 	if ([platform isEqualToString:DH_MACHINE_IPOD_1_1])      return @"iPod Touch 1G";
 	if ([platform isEqualToString:DH_MACHINE_IPOD_2_1])      return @"iPod Touch 2G";
 	if ([platform isEqualToString:DH_MACHINE_IPOD_3_1])      return @"iPod Touch 3G";
