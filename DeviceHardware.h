@@ -40,6 +40,8 @@ typedef enum {
 	DeviceHardwareSpecificPlatform_iPad_3_GSM,
 	DeviceHardwareSpecificPlatform_iPad_3_CDMA,
 	DeviceHardwareSpecificPlatform_iPad_4_WiFi,
+	DeviceHardwareSpecificPlatform_iPad_4_GSM,
+	DeviceHardwareSpecificPlatform_iPad_4_CDMA_GSM,
 	DeviceHardwareSpecificPlatform_iPad_Mini_WiFi,
 	DeviceHardwareSpecificPlatform_iPad_Mini_GSM,
 	DeviceHardwareSpecificPlatform_iPad_Mini_CDMA_GSM,
