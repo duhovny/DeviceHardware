@@ -25,6 +25,8 @@
 #define DH_MACHINE_IPAD_2_3 @"iPad2,3"
 #define DH_MACHINE_IPAD_2_4 @"iPad2,4"
 #define DH_MACHINE_IPAD_2_5 @"iPad2,5"
+#define DH_MACHINE_IPAD_2_6 @"iPad2,6"
+#define DH_MACHINE_IPAD_2_7 @"iPad2,7"
 #define DH_MACHINE_IPAD_3_1 @"iPad3,1"
 #define DH_MACHINE_IPAD_3_2 @"iPad3,2"
 #define DH_MACHINE_IPAD_3_3 @"iPad3,3"
@@ -55,6 +57,8 @@
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_3])      return DeviceHardwareSpecificPlatform_iPad_2_CDMA;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_4])      return DeviceHardwareSpecificPlatform_iPad_2_WiFi;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_5])      return DeviceHardwareSpecificPlatform_iPad_Mini_WiFi;
+	if ([platform isEqualToString:DH_MACHINE_IPAD_2_6])      return DeviceHardwareSpecificPlatform_iPad_Mini_GSM;
+	if ([platform isEqualToString:DH_MACHINE_IPAD_2_7])      return DeviceHardwareSpecificPlatform_iPad_Mini_CDMA_GSM;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_1])      return DeviceHardwareSpecificPlatform_iPad_3_WiFi;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_2])      return DeviceHardwareSpecificPlatform_iPad_3_CDMA;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_3])      return DeviceHardwareSpecificPlatform_iPad_3_GSM;
@@ -85,6 +89,8 @@
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_3])      return DeviceHardwareGeneralPlatform_iPad_2;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_4])      return DeviceHardwareGeneralPlatform_iPad_2;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_5])      return DeviceHardwareGeneralPlatform_iPad_Mini;
+	if ([platform isEqualToString:DH_MACHINE_IPAD_2_6])      return DeviceHardwareGeneralPlatform_iPad_Mini;
+	if ([platform isEqualToString:DH_MACHINE_IPAD_2_7])      return DeviceHardwareGeneralPlatform_iPad_Mini;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_1])      return DeviceHardwareGeneralPlatform_iPad_3;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_2])      return DeviceHardwareGeneralPlatform_iPad_3;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_3])      return DeviceHardwareGeneralPlatform_iPad_3;
@@ -115,6 +121,8 @@
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_3])      return DeviceHardwarePlatformType_iPad;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_4])      return DeviceHardwarePlatformType_iPad;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_5])      return DeviceHardwarePlatformType_iPad;
+	if ([platform isEqualToString:DH_MACHINE_IPAD_2_6])      return DeviceHardwarePlatformType_iPad;
+	if ([platform isEqualToString:DH_MACHINE_IPAD_2_7])      return DeviceHardwarePlatformType_iPad;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_1])      return DeviceHardwarePlatformType_iPad;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_2])      return DeviceHardwarePlatformType_iPad;
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_3])      return DeviceHardwarePlatformType_iPad;
@@ -144,7 +152,9 @@
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_2])      return @"iPad 2 (GSM)";
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_3])      return @"iPad 2 (CDMA)";
 	if ([platform isEqualToString:DH_MACHINE_IPAD_2_4])      return @"iPad 2 (WiFi)";
-	if ([platform isEqualToString:DH_MACHINE_IPAD_2_5])      return @"iPad Mini (GSM)";
+	if ([platform isEqualToString:DH_MACHINE_IPAD_2_5])      return @"iPad Mini (WiFi)";
+	if ([platform isEqualToString:DH_MACHINE_IPAD_2_6])      return @"iPad Mini (GSM)";
+	if ([platform isEqualToString:DH_MACHINE_IPAD_2_7])      return @"iPad Mini (CDMA+GSM)";
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_1])      return @"iPad 3 (WiFi)";
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_2])      return @"iPad 3 (CDMA)";
 	if ([platform isEqualToString:DH_MACHINE_IPAD_3_3])      return @"iPad 3 (GSM)";
