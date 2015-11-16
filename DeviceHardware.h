@@ -1,15 +1,15 @@
-//
-//  DeviceHardware.h
-//
-//  Use to determine version of device.
-//
-//  You can get:
-//  - Specific platform  (ex.: iPad 2 GSM)
-//  - General platform   (ex.: iPad 2)
-//  - Platform type		 (ex.: iPad)
-//  - Platform string	 (ex.: "iPad 2 (GSM)")
-//  - Raw machine string (ex.: "iPad2,2")
-//
+	//
+	//  DeviceHardware.h
+	//
+	//  Use to determine version of device.
+	//
+	//  You can get:
+	//  - Specific platform  (ex.: iPad 2 GSM)
+	//  - General platform   (ex.: iPad 2)
+	//  - Platform type		 (ex.: iPad)
+	//  - Platform string	 (ex.: "iPad 2 (GSM)")
+	//  - Raw machine string (ex.: "iPad2,2")
+	//
 
 #import <Foundation/Foundation.h>
 
@@ -28,7 +28,9 @@ typedef enum {
 	DeviceHardwareSpecificPlatform_iPhone_5S_CDMA_GSM,
 	DeviceHardwareSpecificPlatform_iPhone_5S_Global,
 	DeviceHardwareSpecificPlatform_iPhone_6_CDMA_GSM,
+	DeviceHardwareSpecificPlatform_iPhone_6S_CDMA_GSM,
 	DeviceHardwareSpecificPlatform_iPhone_6_Plus_CDMA_GSM,
+	DeviceHardwareSpecificPlatform_iPhone_6S_Plus_CDMA_GSM,
 	DeviceHardwareSpecificPlatform_iPod_Touch_1G,
 	DeviceHardwareSpecificPlatform_iPod_Touch_2G,
 	DeviceHardwareSpecificPlatform_iPod_Touch_3G,
@@ -66,6 +68,8 @@ typedef enum {
 	DeviceHardwareGeneralPlatform_iPhone_5S,
 	DeviceHardwareGeneralPlatform_iPhone_6,
 	DeviceHardwareGeneralPlatform_iPhone_6_Plus,
+	DeviceHardwareGeneralPlatform_iPhone_6S,
+	DeviceHardwareGeneralPlatform_iPhone_6S_Plus,
 	DeviceHardwareGeneralPlatform_iPod_Touch_1G,
 	DeviceHardwareGeneralPlatform_iPod_Touch_2G,
 	DeviceHardwareGeneralPlatform_iPod_Touch_3G,

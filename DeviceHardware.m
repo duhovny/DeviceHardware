@@ -1,6 +1,6 @@
-//
-//  DeviceHardware.m
-//
+	//
+	//  DeviceHardware.m
+	//
 
 #import "DeviceHardware.h"
 #include <sys/types.h>
@@ -20,6 +20,9 @@
 #define DH_MACHINE_IPHONE_6_2 @"iPhone6,2"
 #define DH_MACHINE_IPHONE_7_1 @"iPhone7,1"
 #define DH_MACHINE_IPHONE_7_2 @"iPhone7,2"
+#define DH_MACHINE_IPHONE_8_1 @"iPhone8,1"
+#define DH_MACHINE_IPHONE_8_2 @"iPhone8,2"
+
 #define DH_MACHINE_IPOD_1_1 @"iPod1,1"
 #define DH_MACHINE_IPOD_2_1 @"iPod2,1"
 #define DH_MACHINE_IPOD_3_1 @"iPod3,1"
@@ -64,6 +67,8 @@
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_6_2])    return DeviceHardwareSpecificPlatform_iPhone_5S_Global;
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_7_1])    return DeviceHardwareSpecificPlatform_iPhone_6_Plus_CDMA_GSM;
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_7_2])    return DeviceHardwareSpecificPlatform_iPhone_6_CDMA_GSM;
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_8_1])    return DeviceHardwareSpecificPlatform_iPhone_6S_CDMA_GSM;
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_8_2])    return DeviceHardwareSpecificPlatform_iPhone_6S_Plus_CDMA_GSM;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_1_1])      return DeviceHardwareSpecificPlatform_iPod_Touch_1G;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_2_1])      return DeviceHardwareSpecificPlatform_iPod_Touch_2G;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_3_1])      return DeviceHardwareSpecificPlatform_iPod_Touch_3G;
@@ -108,6 +113,8 @@
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_6_2])    return DeviceHardwareGeneralPlatform_iPhone_5S;
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_7_1])    return DeviceHardwareGeneralPlatform_iPhone_6_Plus;
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_7_2])    return DeviceHardwareGeneralPlatform_iPhone_6;
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_8_1])    return DeviceHardwareGeneralPlatform_iPhone_6S;
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_8_2])    return DeviceHardwareGeneralPlatform_iPhone_6S_Plus;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_1_1])      return DeviceHardwareGeneralPlatform_iPod_Touch_1G;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_2_1])      return DeviceHardwareGeneralPlatform_iPod_Touch_2G;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_3_1])      return DeviceHardwareGeneralPlatform_iPod_Touch_3G;
@@ -152,6 +159,8 @@
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_6_2])    return DeviceHardwarePlatformType_iPhone;
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_7_1])    return DeviceHardwarePlatformType_iPhone;
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_7_2])    return DeviceHardwarePlatformType_iPhone;
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_8_1])    return DeviceHardwarePlatformType_iPhone;
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_8_2])    return DeviceHardwarePlatformType_iPhone;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_1_1])      return DeviceHardwarePlatformType_iPod_Touch;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_2_1])      return DeviceHardwarePlatformType_iPod_Touch;
 	if ([platform isEqualToString:DH_MACHINE_IPOD_3_1])      return DeviceHardwarePlatformType_iPod_Touch;
@@ -196,6 +205,8 @@
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_6_2])    return @"iPhone 5S (Global)";
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_7_1])    return @"iPhone 6 Plus (CDMA+GSM)";
 	if ([platform isEqualToString:DH_MACHINE_IPHONE_7_2])    return @"iPhone 6 (CDMA+GSM)";
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_8_1])    return @"iPhone 6S (CDMA+GSM)";
+	if ([platform isEqualToString:DH_MACHINE_IPHONE_8_2])    return @"iPhone 6S Plus (CDMA+GSM)";
 	if ([platform isEqualToString:DH_MACHINE_IPOD_1_1])      return @"iPod Touch 1G";
 	if ([platform isEqualToString:DH_MACHINE_IPOD_2_1])      return @"iPod Touch 2G";
 	if ([platform isEqualToString:DH_MACHINE_IPOD_3_1])      return @"iPod Touch 3G";
